@@ -19,13 +19,13 @@ ms.locfileid: "48242492"
 ---
 # <a name="azure-blockchain-workbench-architecture"></a>Azure Blockchain Workbench-architectuur
 
-Azure Blockchain Workbench vereenvoudigt de ontwikkeling van blockchain-toepassingen door op te geven van een oplossing met behulp van verschillende Azure-onderdelen. Blockchain Workbench kan worden geïmplementeerd met behulp van een oplossingssjabloon in de Azure Marketplace. De sjabloon kunt u kiezen modules en -onderdelen implementeren met inbegrip van blockchain-stack, type van de clienttoepassing, en ondersteuning bieden voor IoT-integratie. Zodra geïmplementeerd, biedt Blockchain Workbench toegang tot een web-app, iOS-app, en Android-app.
+Azure Blockchain Workbench vereenvoudigt de ontwikkeling van blockchain-toepassingen door een oplossing te bieden die gebruik maakt van verschillende Azure-onderdelen. Blockchain Workbench kan worden geïmplementeerd met behulp van een oplossingssjabloon in de Azure Marketplace. De sjabloon stelt u in staat de modules en componenten te kiezen om te implementeren, waaronder de blockchain-stack, type van de clienttoepassing, en ondersteuning voor IoT-integratie. Eenmaal geïmplementeerd, biedt Blockchain Workbench toegang tot een web-app, iOS-app, en Android-app.
 
 ![Blockchain Workbench-architectuur](./media/architecture/architecture.png)
 
 ## <a name="identity-and-authentication"></a>Identiteit en verificatie
 
-Blockchain Workbench gebruiken, kan een consortium hun ondernemings-id's met behulp van Azure Active Directory (Azure AD) federeren. Workbench genereert nieuwe gebruikersaccounts voor identiteiten in de chain met de ondernemings-id's die zijn opgeslagen in Azure AD. De Identiteitstoewijzing kunt u geverifieerde Meld u aan bij de client-API's en toepassingen en maakt gebruik van het verificatiebeleid van organisaties. Workbench biedt ook de mogelijkheid om te koppelen aan specifieke rollen binnen een bepaalde opdracht slimme ondernemings-id's. Bovendien Workbench biedt ook een mechanisme voor het identificeren van de acties die deze rollen kunt nemen en op welk tijdstip.
+Door Blockchain Workbench te gebruiken, kan een consortium zijn organisatie-identiteiten met behulp van Azure Active Directory (Azure AD) federeren. Workbench genereert nieuwe gebruikersaccounts voor identiteiten in de chain met de organisatie-identiteiten die zijn opgeslagen in Azure AD. De identiteitstoewijzing faciliteert de authenticatie naar client APIs en toepassingen en gebruikt het verificatiebeleid van organisaties. Workbench biedt ook de mogelijkheid om te koppelen aan specifieke rollen binnen een bepaalde opdracht slimme ondernemings-id's. Bovendien Workbench biedt ook een mechanisme voor het identificeren van de acties die deze rollen kunt nemen en op welk tijdstip.
 
 Nadat Blockchain Workbench is geïmplementeerd, wordt gebruikers met Blockchain Workbench via de clienttoepassingen, de client op basis van REST-API of de API voor Apparaatmessaging werken. In alle gevallen moeten interacties worden geverifieerd, via Azure Active Directory (Azure AD) of een apparaat-specifieke referenties.
 
